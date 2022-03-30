@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style/style.css">
+  <title>Biblioteca de Jogos</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Reviews de Games</h1>
+    <a href="#scroll">
+      <button type="button" class="insert-analise">Inserir sua analise</button>
+    </a>
+  </div>
+
+  <div class="container-main">
+
+
+  </div>
+  <div class='container-form'>
+
+    <h2 id="scroll">Faça aqui seu review</h2>
+    <form action="https://" method="post">
+      <div>
+        <label class='title' for="title">Titulo</label>
+      </div>
+      <input class='title_card' type="text" id="title" placeholder="Nome do Jogo">
+
+      <div>
+        <label class='title' for="title">Imagem</label>
+      </div>
+      <input class='url_imagem' type="text" id="title" placeholder="Inserir URL da imagem">
+      <span>Exemplo: https://picsum.photos/200</span>
+
+      <div class="label-coment">
+        <label class='coment' for="coment">Comentario</label>
+      </div>
+      <textarea class='coment-box' id="coment" rows="10" cols="40" placeholder="Seu review"></textarea>
+
+      <div>
+        <button class='enviar' type="submit"> Enviar </button>
+        <button type="reset" class='reset'>Reiniciar</button>
+      </div>
+    </form>
+
+  </div>
+
+  <script src='scripts/main.js'></script>
+
+</body>
+
+</html>

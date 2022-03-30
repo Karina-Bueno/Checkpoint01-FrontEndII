@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bungee', cursive;
+}
+
+body {
+  background-color: rgb(39, 39, 39);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.item:hover {
+  box-shadow: 0 8px 16px 0 rgba(164, 6, 255, 0.548);
+}
+
+.item {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px cantos arredondados */
+  width: 30em;
+  box-sizing: border-box;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border: 1px solid lightgray;
+  background-color: rgb(19, 19, 19);
+  color: rgb(230, 230, 230);
+}
+
+.item img {
+  max-width: 100%; 
+  width: 600px;
+  height: 600px;
+}
+
+.item h2 {
+  font-size: 1em;
+  margin-bottom: .2em;
+  color: rgb(230, 230, 230);
+}
+
+h1 {
+  color: white;
+  font-size: 50px;/* Aumentei mais o tamanho da fonte */
+  line-height: 56px;/* Ajuste altura da linha */
+  font-weight: bold;/*vai deixar a fonte em negrito*/
+  margin-top: 0;
+  margin-bottom: 10px;/* Ajuste da margem inferior */
+  text-align: center;
+}
+h2 {
+  color: white;
+  line-height: 56px;/* Ajuste altura da linha */
+  font-weight: bold;/*vai deixar a fonte em negrito*/
+  margin-top: 0;
+  margin-bottom: 10px;/* Ajuste da margem inferior */
+  text-align: center;
+}
+
+span {
+  font-family: 'Bree Serif', serif;
+  color:white;
+}
+
+.container {
+  text-align: center;  
+  width: 80%;
+  margin: 2em 10%;
+}
+
+.container-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2em 10%;
+}
+
+label {  
+  color: white;
+  text-align: center;  
+  width: 80%;
+  margin: 2em 10%;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+textarea {
+  border-radius: 10px;
+  width: 50%
+}
+
+.enviar:hover{
+  transform: scale(110%);
+}
+
+.enviar , .reset {
+    margin: 5px;
+    border-radius: 10px;
+    width: 35%;   
+    height:50px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;  
+}
+
+.insert-analise {
+  width: 50%;
+  margin: 5px;
+  border-radius: 10px;  
+  height:50px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (min-width: 720px) {
+
+  .container-main{
+    justify-content: space-around;
+    position: relative;
+    width: 80%;
+    left: 300px;
+    margin: 0;   
+  }
+
+  .container-form{
+    position: absolute;
+    display: block;
+    top: 30%;
+    width: 300px;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+  }
+  
+  textarea {
+    border-radius: 10px;
+    width: 80%
+  }
+
+  .insert-analise {
+    width: 15%;
+    font-size: 16px;
+  }
+  
+}
